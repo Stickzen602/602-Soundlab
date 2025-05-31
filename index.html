@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>602 Soundlab | Home</title>
+  <style>
+    body {
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+	  text-align: center;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0ff;
+      text-decoration: none;
+    }
+    main {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2em;
+      text-align: center;
+    }
+    .button {
+      background-color: #0ff;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .featured {
+      margin-top: 3em;
+      background-color: rgba(26, 26, 26, 0.8);
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+    .featured h3 {
+      color: #0ff;
+    }
+    .featured p {
+      font-size: 1.1em;
+    }
+    .socials {
+      margin-top: 2em;
+    }
+    .socials a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .socials img {
+      width: 30px;
+      height: 30px;
+    }
+	.featured-tracks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.featured-item {
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+}
+
+@media (max-width: 900px) {
+  .featured-item {
+    width: 45%;
+  }			
+@media (max-width: 600px) {
+  .featured-item {
+    width: 90%; /* full width on phones */
+  }
+
+  
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+	h1, h2, h3 {
+  font-family: 'Zen Dots', cursive;
+}
+  </style>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Dots&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <header>
+    <h1>🎼602 Soundlab🎼</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to the Sound Zone</h2>
+    <p>Download original beats, produced with passion. All for free. Share the vibe!</p>
+    
+    <a href="music.html" class="button">🎵 Explore Music</a>
+
+    <div class="featured">
+      <h3>🔥 New Releases</h3>
+	  
+	  	<section id="featured">
+  <h2>🎶 Featured Tracks</h2>
+
+  <div class="featured-tracks">
+
+    <div class="featured-item">
+      <img src="album.jpg" alt="Track One Album Cover" class="album-cover">
+      <div class="track-info">
+        <h3>Track One</h3>
+        <p>By Stickzen602</p>
+        <audio controls>
+          <source src="Stickzen602 - G7.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+		
+		  <div class="waveform">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		
+      </div>
+    </div>
+
+
+  </div>
+</section>
+	   
+	 </div>
+
+
+
+
+    <div class="featured">
+      <h3>🎙️ Message From Stickzen602</h3>
+      <p>“I believe music should be free to inspire the world.I really dont have many words of encouragement,motivation or inspiration but with this sounds,the exclusives,I hope you get healed on whatever situation you are dealing with.Listen with your heart and ears. KE WAVE!! ”</p>
+    </div>
+
+    <div class="socials">
+      <a href="https://instagram.com/@Stickzen602_" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://youtube.com/yourchannel" target="_blank">
+        <img src="youtube.png" alt="YouTube">
+      </a>
+      <a href="https://wa.me/yourwhatsapplink" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Stickzen602. All rights reserved.</p>
+  </footer>
+</body>
+</html>

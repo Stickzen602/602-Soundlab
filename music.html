@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Beat Store | Free Beats</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #222;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0ff;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+    }
+    .track {
+      margin-bottom: 2em;
+      background-color: #1a1a1a;
+      padding: 1em;
+      border-radius: 10px;
+    }
+    audio {
+      width: 100%;
+    }
+    a.download-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0ff;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎵 Free Beats</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="music.html">Free Beats</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="track">
+      <h2>Dream Flow</h2>
+      <audio controls>
+        <source src="music/beat1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <a class="download-link" href="music/beat1.mp3" download>Download "Dream Flow"</a>
+    </section>
+
+    <section class="track">
+      <h2>Night Drive</h2>
+      <audio controls>
+        <source src="music/beat2.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <a class="download-link" href="music/beat2.mp3" download>Download "Night Drive"</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Enjoy the beats. Support by sharing the link!</p>
+  </footer>
+</body>
+</html>
