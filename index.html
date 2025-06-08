@@ -10,165 +10,133 @@
       color: #fff;
       font-family: 'Montserrat', Arial, sans-serif;
       margin: 0;
-	  text-align: center;
+      text-align: center;
     }
     header {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 1em;
-      text-align: center;
     }
     nav a {
       margin: 0 15px;
-      color: #0ff;
+      color: #00f7ff;
       text-decoration: none;
+      font-weight: bold;
     }
     main {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2em;
-      text-align: center;
     }
     .button {
-      background-color: #0ff;
+      background-color: #00f7ff;
       color: #000;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    .featured {
-      margin-top: 3em;
-      background-color: rgba(26, 26, 26, 0.8);
-      padding: 1.5em;
       border-radius: 10px;
+      font-weight: bold;
+      margin-top: 20px;
+      box-shadow: 0 0 8px #00f7ff, 0 0 20px #00f7ff;
     }
-    .featured h3 {
-      color: #0ff;
+    h1, h2, h3 {
+      font-family: 'Zen Dots', cursive;
     }
-    .featured p {
-      font-size: 1.1em;
+    .spotlight {
+      background-color: rgba(26, 26, 26, 0.8);
+      padding: 2em;
+      border-radius: 12px;
+      margin-top: 3em;
+      box-shadow: 0 0 15px #00f7ff44;
+    }
+    .spotlight audio {
+      margin-top: 1em;
+      width: 100%;
+      max-width: 300px;
+    }
+    .about-brief {
+      margin-top: 3em;
+      padding: 1.5em;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-left: 5px solid #00f7ff;
     }
     .socials {
-      margin-top: 2em;
+      margin-top: 3em;
     }
     .socials a {
-      margin: 0 10px;
+      margin: 0 15px;
       display: inline-block;
     }
     .socials img {
-      width: 30px;
-      height: 30px;
+      width: 36px;
+      height: 36px;
+      filter: brightness(1.2) drop-shadow(0 0 5px #00f7ff);
     }
-	.featured-tracks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.featured-item {
-  background: rgba(0,0,0,0.6);
-  border-radius: 10px;
-  padding: 10px;
-  width: 400px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 320px;
-}
-
-@media (max-width: 900px) {
-  .featured-item {
-    width: 45%;
-  }			
-@media (max-width: 600px) {
-  .featured-item {
-    width: 90%; /* full width on phones */
-  }
-
-  
+	.header-flex {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 15px; 
+	  flex-wrap: wrap;
+	}
+	.header-gif {
+	  width: 160px; 
+	  height: 150px;
+	  filter: none; 
+	}
     footer {
       background-color: rgba(0, 0, 0, 0.7);
       text-align: center;
       padding: 1em;
-      margin-top: 2em;
+      margin-top: 3em;
+      font-size: 0.9em;
     }
-	h1, h2, h3 {
-  font-family: 'Zen Dots', cursive;
-}
   </style>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Dots&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-flex">
+    <img src="giphy1.gif" alt="Dancing animation" class="header-gif">
     <h1>🎼602 Soundlab🎼</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="music.html">Music</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+    <img src="giphy1.gif" alt="Dancing animation" class="header-gif">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
   <main>
     <h2>Welcome to the Sound Zone</h2>
     <p>Download original beats, produced with passion. All for free. Share the vibe!</p>
-    
     <a href="music.html" class="button">🎵 Explore Music</a>
 
-    <div class="featured">
-      <h3>🔥 New Releases</h3>
-	  
-	  	<section id="featured">
-  <h2>🎶 Featured Tracks</h2>
-
-  <div class="featured-tracks">
-
-    <div class="featured-item">
-      <img src="album.jpg" alt="Track One Album Cover" class="album-cover">
-      <div class="track-info">
-        <h3>Track One</h3>
-        <p>By Stickzen602</p>
-        <audio controls>
-          <source src="Stickzen602 - G7.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-		
-		  <div class="waveform">
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		</div>
-		
-      </div>
+    <div class="spotlight">
+      <h3>🎧 Latest Release</h3>
+      <p><strong>Stickzen602 – FEDE 2.0</strong></p>
+      <audio controls>
+        <source src="Stickzen602 - FEDE 2.0 [demo].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
 
-
-  </div>
-</section>
-	   
-	 </div>
-
-
-
-
-    <div class="featured">
-      <h3>🎙️ Message From Stickzen602</h3>
-      <p>“I believe music should be free to inspire the world.I really dont have many words of encouragement,motivation or inspiration but with this sounds,the exclusives,I hope you get healed on whatever situation you are dealing with.Listen with your heart and ears. KE WAVE!! ”</p>
+    <div class="about-brief">
+      <h3>🎙️ Behind the Sound</h3>
+      <p>
+        Stickzen602 blends emotion with energy — beats from the streets to your soul. 
+        This isn’t just music — it’s a wave.
+      </p>
+      <a href="about.html" class="button">💡 Read More</a>
     </div>
 
     <div class="socials">
+      <h3>🌐 Connect with the Lab</h3>
       <a href="https://instagram.com/@Stickzen602_" target="_blank">
         <img src="instagram.png" alt="Instagram">
       </a>
-      <a href="https://youtube.com/yourchannel" target="_blank">
+      <a href="https://www.youtube.com/@stickzen602" target="_blank">
         <img src="youtube.png" alt="YouTube">
       </a>
       <a href="https://wa.me/yourwhatsapplink" target="_blank">
@@ -182,3 +150,4 @@
   </footer>
 </body>
 </html>
+
